@@ -1,6 +1,6 @@
 <script setup>
   import { computed, ref } from 'vue';
-  import FunCustomComponent from './FunCustomComponent.vue';
+  import FunCustomComponent from './components/FunCustomComponent.vue';
 
   const isActive = ref(false);
   const error = ref(false);

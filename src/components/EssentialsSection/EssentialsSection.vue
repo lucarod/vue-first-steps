@@ -1,14 +1,16 @@
 <script setup>
-  import TemplateSyntax from './TemplateSyntax.vue';
-  import ReactivityFundamentals from './ReactivityFundamentals.vue';
-  import ComputedProperties from './ComputedProperties.vue';
-  import ClassAndStyleBindings from './ClassAndStyleBindings.vue';
-  import ConditionalRendering from './ConditionalRendering.vue';
-  import ListRendering from './ListRendering.vue';
-  import EventHandling from './EventHandling.vue';
-  import FormInputBindings from './FormInputBindings.vue';
-  import LifecycleHooksBasics from './LifecycleHooksBasics.vue';
-  import WatchersTopic from './WatchersTopic.vue';
+  import TemplateSyntax from './topics/TemplateSyntax.vue';
+  import ReactivityFundamentals from './topics/ReactivityFundamentals.vue';
+  import ComputedProperties from './topics/ComputedProperties.vue';
+  import ClassAndStyleBindings from './topics/ClassAndStyleBindings.vue';
+  import ConditionalRendering from './topics/ConditionalRendering.vue';
+  import ListRendering from './topics/ListRendering.vue';
+  import EventHandling from './topics/EventHandling.vue';
+  import FormInputBindings from './topics/FormInputBindings.vue';
+  import LifecycleHooksBasics from './topics/LifecycleHooksBasics.vue';
+  import WatchersTopic from './topics/WatchersTopic.vue';
+  import TemplateRefs from './topics/TemplateRefs.vue';
+import ComponentBasics from './topics/ComponentBasics.vue';
 </script>
 
 <template>
@@ -22,4 +24,6 @@
   <FormInputBindings />
   <LifecycleHooksBasics />
   <WatchersTopic />
+  <TemplateRefs />
+  <ComponentBasics />
 </template>
