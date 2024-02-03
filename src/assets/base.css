@@ -59,9 +59,12 @@
 }
 
 body {
-  min-height: 100vh;
-  color: var(--color-text);
   background: var(--color-background);
+  min-height: 100vh;
+}
+
+body, button {
+  color: var(--color-text);
   transition:
     color 0.5s,
     background-color 0.5s;
@@ -83,4 +86,24 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+h2 {
+  margin-top: 32px;
+}
+
+h3 {
+  margin-top: 24px;
+}
+
+p, form {
+  margin-top: 8px;
+}
+
+button {
+  background: none;
+  border: none;
+  color: var(--color-text);
+  cursor: pointer;
 }
