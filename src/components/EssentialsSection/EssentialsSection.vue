@@ -14,16 +14,19 @@ import ComponentBasics from './topics/ComponentBasics.vue';
 </script>
 
 <template>
-  <TemplateSyntax />
-  <ReactivityFundamentals />
-  <ComputedProperties />
-  <ClassAndStyleBindings />
-  <ConditionalRendering />
-  <ListRendering />
-  <EventHandling />
-  <FormInputBindings />
-  <LifecycleHooksBasics />
-  <WatchersTopic />
-  <TemplateRefs />
-  <ComponentBasics />
+  <section>
+    <h1>Essentials</h1>
+    <TemplateSyntax />
+    <ReactivityFundamentals />
+    <ComputedProperties />
+    <ClassAndStyleBindings />
+    <ConditionalRendering />
+    <ListRendering />
+    <EventHandling />
+    <FormInputBindings />
+    <LifecycleHooksBasics />
+    <WatchersTopic />
+    <TemplateRefs />
+    <ComponentBasics />
+  </section>
 </template>

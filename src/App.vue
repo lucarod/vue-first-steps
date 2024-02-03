@@ -1,5 +1,6 @@
 <script setup>
   import EssentialsSection from './components/EssentialsSection/EssentialsSection.vue';
+  import ComponentsDepthSection from './components/ComponentsDepthSection/ComponentsDepthSection.vue'
 </script>
 
 <template>
@@ -10,6 +11,7 @@
     </header>
     <main>
       <EssentialsSection />
+      <ComponentsDepthSection />
     </main>
   </div>
 </template>
@@ -18,5 +20,10 @@
   .app-container {
     padding: 16px;
     margin-bottom: 64px;
+
+    h1 {
+      margin-top: 0;
+      font-size: 32px;
+    }
   }
 </style>
