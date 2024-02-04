@@ -1,5 +1,5 @@
 <script setup>
-import { useMouse } from './components/useMouse';
+import { useMouse } from '@/app/composables/useMouse';
 
 const { x, y } = useMouse();
 </script>
