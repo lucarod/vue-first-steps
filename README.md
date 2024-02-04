@@ -7,5 +7,5 @@ Through the sections of this website, I've summarized most of Vue's learning doc
 
 ## How can I see the project?
 
-The project is live on [](https://lucarod.github.io/vue-first-steps)
+The project is live on [https://lucarod.github.io/vue-first-steps](https://lucarod.github.io/vue-first-steps).
 Some problems are expected, specially on the mobile version, where I've not been able to develop as intended due to not having enough time within the time interval (2 days)
