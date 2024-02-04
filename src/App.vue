@@ -24,6 +24,10 @@ function handleChangeRoute() {
   currentPath.value = window.location.hash;
 }
 
+function scrollTop() {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
 onMounted(() => {
   window.addEventListener('hashchange', handleChangeRoute)
 });
@@ -50,17 +54,20 @@ onUnmounted(() => {
       <component :is="currentView" />
     </main>
     <footer>
+      <button @click="scrollTop">scroll to top</button>
       <span>
         Made with 💗 by Luca Rodrigues
       </span>
+      <span></span>
     </footer>
   </div>
 </template>
 
 <style scoped>
   .app-container {
-    padding: 16px;
-    margin-bottom: 64px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 
     h1 {
       margin-top: 0;
@@ -70,6 +77,10 @@ onUnmounted(() => {
         color: #42b883;
       }
     }
+  }
+
+  header {
+    padding: 16px 16px 0;
   }
 
   nav {
@@ -83,12 +94,22 @@ onUnmounted(() => {
     }
   }
 
+  main {
+    padding: 0 16px 32px;
+  }
+
   footer {
+    background: var(--color-background);
     width: 100%;
-    position: fixed;
-    bottom: 16px;
+    padding: 16px;
     display: flex;
-    justify-content: center;
-    margin-top: 16px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    border-top: 1px solid var(--color-background-mute);
+
+    & > button {
+      text-decoration: underline;
+    }
   }
 </style>
