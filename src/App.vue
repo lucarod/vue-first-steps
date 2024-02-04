@@ -1,6 +1,7 @@
 <script setup>
-  import EssentialsSection from './components/EssentialsSection/EssentialsSection.vue';
-  import ComponentsDepthSection from './components/ComponentsDepthSection/ComponentsDepthSection.vue'
+import EssentialsSection from './components/EssentialsSection/EssentialsSection.vue';
+import ComponentsDepthSection from './components/ComponentsDepthSection/ComponentsDepthSection.vue'
+import ReusabilitySection from './components/ReusabilitySection/ReusabilitySection.vue';
 </script>
 
 <template>
@@ -12,6 +13,7 @@
     <main>
       <EssentialsSection />
       <ComponentsDepthSection />
+      <ReusabilitySection />
     </main>
   </div>
 </template>
