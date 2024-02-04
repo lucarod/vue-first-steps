@@ -1,35 +1,11 @@
 # vue-first-steps
 
-This template should help get you started developing with Vue 3 in Vite.
+## Why this project exists?
 
-## Recommended IDE Setup
+The intent of vue-first-steps is to act as a sort of study notebook for Vue.
+Through the sections of this website, I've summarized most of Vue's learning docs and gave examples of usage of its core capabilities.
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## How can I see the project?
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-yarn
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-yarn dev
-```
-
-### Compile and Minify for Production
-
-```sh
-yarn build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-yarn lint
-```
+The project is live on [](https://lucarod.github.io/vue-first-steps)
+Some problems are expected, specially on the mobile version, where I've not been able to develop as intended due to not having enough time within the time interval (2 days)
