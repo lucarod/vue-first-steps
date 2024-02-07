@@ -2,6 +2,9 @@
   import { ref } from 'vue';
 
   const message = ref('');
+  const lazyMessage = ref('');
+  const rawMessage = ref('');
+  const rawLazyMessage = ref('');
 </script>
 
 <template>
@@ -17,8 +20,34 @@
     </section>
     <section>
       <h3>Basic Usage</h3>
-      <p>Message is: {{ message }}</p>
-      <input v-model="message" placeholder="Edit me" />
+      <section>
+        <h4>Using v-model directly:</h4>
+        <p>Message is: {{ message }}</p>
+        <input v-model="message" placeholder="Edit me" />
+      </section>
+      <section>
+        <h4>Using v-model with .lazy:</h4>
+        <p>Message is: {{ lazyMessage }}</p>
+        <input v-model.lazy="lazyMessage" placeholder="Edit me" />
+      </section>
+      <section>
+        <h4>Using :value and @input:</h4>
+        <p>Message is: {{ rawMessage }}</p>
+        <input 
+          :value="rawMessage"
+          @input="event => rawMessage = event.target.value"
+          placeholder="Edit me"
+        />
+      </section>
+      <section>
+        <h4>Using :value and @change:</h4>
+        <p>Message is: {{ rawLazyMessage }}</p>
+        <input 
+          :value="rawLazyMessage"
+          @input="event => rawLazyMessage = event.target.value"
+          placeholder="Edit me"
+        />
+      </section>
     </section>
     <section>
       <h3>Value Bindings</h3>
